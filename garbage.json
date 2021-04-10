@@ -1,0 +1,25 @@
+{
+    firstName: 'Simba',
+    familyName: '',
+    title: 'King',
+    payPerHour: 100,
+    timeInEvents: [
+        { type: 'TimeIn', hour: 900, date: '2019-01-01'
+        },
+        { type: 'TimeIn', hour: 1000, date: '2019-01-02'
+        }
+    ],
+    timeOutEvents: [
+        { type: 'TimeOut', hour: 1300, date: '2019-01-01'
+        },
+        { type: 'TimeOut', hour: 1300, date: '2019-01-02'
+        }
+    ]
+}
+
+let values = [900, 9000, 2000, 2100, 1000, 2400]
+let x = values.map(i => i.toString())
+
+console.log(typeof(x))
+let newArr = x.map(i => i.replace(/(0){2}$/i, ''));
+console.log(newArr);
